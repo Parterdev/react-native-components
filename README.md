@@ -48,4 +48,5 @@ To start the development server and run app on simulator or device
 </ul>
 
 <hr>
+
 ### 👋 You can visit my webpage here: [Paul's website](https://paul-teran.com/)
