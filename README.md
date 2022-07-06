@@ -4,7 +4,7 @@ This project was created with [React Native CLI](https://reactnative.dev/) and [
 
 ![ComponentsApp](https://github.com/Parterdev/react-native-components/blob/master/reactNativeComponents.gif)
 
-## Description
+## 1. Description
 This project is a new practical item of my mobile app series that made with native RN components and:
  - react native v0.65.1
  - [stack-navigator](https://reactnavigation.org/docs/stack-navigator/) - (to make transitions between screens)
@@ -15,23 +15,37 @@ This project is a new practical item of my mobile app series that made with nati
  - Of course, I used things like custom hooks, components, navigator and context API to manage theme app. 
 
 
-## Available Scripts
+## 2. Available Scripts
+<ul>
+  <li>
+    <span style="background-color: #6495ed;color:   #ffff">The project has been only tested on Android device
+    </span>
+  </li>
+</ul>
 
-In the project directory, you can run special commands like this:
+
+In the project directory, you can run special commands like these:
 
 To install dependencies 
-#### `$ npm install` | `$ yarn install`
+
+<ul>
+  <li>$ npm install | $ yarn install</li>
+  <li>$ npx react-native run-android</li>
+  <li>$ npx react-native run-ios (iOS)</li>
+  <ul>
+    <li>$ cd project/ios/ and run $ pod install</li>
+  </ul>
+</ul>
 
 To start the development server and run app on simulator or device
-#### `$ npx react-native run-android`
 
-#### `$ npx react-native run-ios`
+## 3. Notice
+<ul>
+  <li>
+    <span style="background-color: #7fffd4;">Feel free to   fork this repo and add your own twist!
+    </span>
+  </li>
+</ul>
 
-<br>
-
-## Feel free to fork this repo and add your own twist.
-
-### More about me
-
-## 👋 You can visit my webpage here: [Paul's website](https://paul-teran.com/).
-
+<hr>
+### 👋 You can visit my webpage here: [Paul's website](https://paul-teran.com/)
