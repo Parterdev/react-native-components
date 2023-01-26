@@ -41,9 +41,9 @@ export const SectionListScreen = () => {
     <View style={{...styles.container, backgroundColor: colors.background}}>
       <SectionList
         sections={houses}
-        ListHeaderComponent={() => <TitleHeader title={'Text Input Form'} />}
-        ListFooterComponent={() => <TitleHeader title={'Total records per list: '  + houses.map((value) => value.data.length)} />}
-        renderSectionFooter={({section}) => <TitleHeader title={'Total: ' + section.data.length} />}
+        ListHeaderComponent={() => <TitleHeader text={'Text Input Form'} />}
+        ListFooterComponent={() => <TitleHeader text={'Total records per list: '  + houses.map((value) => value.data.length)} />}
+        renderSectionFooter={({section}) => <TitleHeader text={'Total: ' + section.data.length} />}
         renderSectionHeader={({section}) => _sectionHeader(section.owner)}
         renderItem={({item}) => <Text style={{color: colors.text}}>{item}</Text>}
         ItemSeparatorComponent={() => <ItemDivider />}

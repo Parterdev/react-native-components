@@ -2,29 +2,30 @@ import { menuItem } from "../interfaces/FlatListMenuItem";
 
 export const optionsMenu: menuItem[] = [
   {
-    name:  'Fade in/out animation',
-    icon:  'cube-outline',
-    route: 'Animation101Screen'
-  },
-  {
-    name:  'Move X/Y animation',
-    icon:  'cube-outline',
-    route: 'Animation102Screen'
-  },
-  {
-    name:  'Switch',
-    icon:  'cube-outline',
-    route: 'SwitchScreen'
-  },
-  {
     name:  'Alert',
     icon:  'cube-outline',
     route: 'AlertScreen'
   },
   {
-    name:  'TextInput',
+    name:  'Fade in/out animation',
     icon:  'cube-outline',
-    route: 'TextInputScreen'
+    route: 'Animation101Screen',
+  },
+  {
+    name:  'Inifite Scroll',
+    icon:  'cube-outline',
+    route: 'InfiniteScrollScreen',
+  },
+  {
+    name:  'Modal',
+    icon:  'cube-outline',
+    route: 'ModalScreen',
+    isIssued: true,
+  },
+  {
+    name:  'Move X/Y animation',
+    icon:  'cube-outline',
+    route: 'Animation102Screen'
   },
   {
     name:  'Pull to refresh',
@@ -37,19 +38,19 @@ export const optionsMenu: menuItem[] = [
     route: 'SectionListScreen'
   },
   {
-    name:  'Modal',
+    name:  'Slider',
     icon:  'cube-outline',
-    route: 'ModalScreen'
+    route: 'SliderScreen',
   },
   {
-    name:  'Inifite Scroll',
+    name:  'Switch',
     icon:  'cube-outline',
-    route: 'InfiniteScrollScreen'
+    route: 'SwitchScreen'
   },
   {
-    name:  'Slides',
+    name:  'TextInput',
     icon:  'cube-outline',
-    route: 'SlidesScreen'
+    route: 'TextInputScreen'
   },
   {
     name:  'Theme',

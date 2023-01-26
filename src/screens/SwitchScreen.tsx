@@ -29,7 +29,7 @@ export const SwitchScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.switchContainer}>
-        <TitleHeader title={'Switch Component'}/>
+        <TitleHeader text={'Switch Component'}/>
         <View style={styles.switchRow}>
           <Text style={{color: 'black', fontSize: 20}}>isActive: </Text>
           <CustomSwitch isToggle={isActive} onChange={ (value) => onChange(value, 'isActive') } />

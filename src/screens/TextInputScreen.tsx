@@ -22,7 +22,7 @@ export const TextInputScreen = () => {
       style={{...styles.container, backgroundColor: colors.background}}>
       <ScrollView style={styles.textInputContainer}>
           <View style={{ alignItems: 'center' }}>
-            <TitleHeader title={'Text Input Form'} />
+            <TitleHeader text={'Text Input Form'} />
           </View>
           <TextInput
             style={{...styles.textInput, color: colors.text}}
@@ -45,7 +45,7 @@ export const TextInputScreen = () => {
             <CustomSwitch isToggle={isSuscribed} onChange={(value) => onChange(value, 'isSuscribed')} />
           </View>
           
-          <TitleHeader title={JSON.stringify(form, null, 3)} />
+          <TitleHeader text={JSON.stringify(form, null, 3)} />
           
 
           <TextInput

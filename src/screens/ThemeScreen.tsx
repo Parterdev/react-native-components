@@ -10,7 +10,7 @@ export const ThemeScreen = () => {
 
   return (
     <View style={{...styles.container, backgroundColor: colors.background}}>
-      <TitleHeader title={'Theme Screen'} />
+      <TitleHeader text={'Theme Screen'} />
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <ButtonIcon
           text='Light' 

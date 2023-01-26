@@ -1,19 +1,22 @@
 import React, { useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { HomeScreen } from '../screens/HomeScreen';
-import { Animation101Screen } from '../screens/Animation101Screen';
-import { Animation102Screen } from '../screens/Animation102Screen';
-import { SwitchScreen } from '../screens/SwitchScreen';
-import { AlertScreen } from '../screens/AlertScreen';
-import { TextInputScreen } from '../screens/TextInputScreen';
-import { PullRefreshScreen } from '../screens/PullRefreshScreen';
-import { SectionListScreen } from '../screens/SectionListScreen';
-import { ModalScreen } from '../screens/ModalScreen';
-import { InfiniteScrollScreen } from '../screens/InfiniteScrollScreen';
-import { SlidesScreen } from '../screens/SlidesScreen';
-import { ThemeScreen } from '../screens/ThemeScreen';
+import { 
+  HomeScreen, 
+  Animation101Screen, 
+  Animation102Screen, 
+  SwitchScreen, 
+  AlertScreen, 
+  TextInputScreen, 
+  ThemeScreen,
+  PullRefreshScreen , 
+  SliderScreen,
+  SectionListScreen, 
+  ModalScreen, 
+  InfiniteScrollScreen 
+} from  '../screens/index';
 import { ThemeContext } from '../context/theme/ThemeContext';
+import { HeaderLeft } from './HeaderLeft';
   
   const Stack = createStackNavigator();
 
@@ -28,6 +31,7 @@ import { ThemeContext } from '../context/theme/ThemeContext';
         <Stack.Navigator
           screenOptions={{
             headerShown: true,
+            headerLeft: HeaderLeft,
             headerStyle: {
               shadowColor: "#000",
               shadowOffset: {
@@ -37,7 +41,7 @@ import { ThemeContext } from '../context/theme/ThemeContext';
               shadowOpacity: 0.39,
               shadowRadius: 8.30,
               elevation: 13,
-              backgroundColor: theme.colors.primary
+              backgroundColor: '#292c34'
             },
             headerTintColor: 'white',
           }}
@@ -52,7 +56,7 @@ import { ThemeContext } from '../context/theme/ThemeContext';
           <Stack.Screen name="SectionListScreen" component={SectionListScreen} />
           <Stack.Screen name="ModalScreen" component={ModalScreen} />
           <Stack.Screen name="InfiniteScrollScreen" component={InfiniteScrollScreen} />
-          <Stack.Screen name="SlidesScreen" component={SlidesScreen} />
+          <Stack.Screen name="SliderScreen" component={SliderScreen} /> 
           <Stack.Screen name="ThemeScreen" component={ThemeScreen} />
 
         </Stack.Navigator>

@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import { ThemeContext } from '../context/theme/ThemeContext'
 import { useNavigation } from '@react-navigation/core'
 import { StackNavigationProp } from '@react-navigation/stack'
-import { menuItem } from '../interfaces/FlatListMenuItem'
-import Icon from 'react-native-vector-icons/Ionicons'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { View, Text, StyleSheet } from 'react-native'
+import { ThemeContext } from '../context/theme/ThemeContext'
+import { menuItem } from '../interfaces/FlatListMenuItem';
+import Icon from 'react-native-vector-icons/Ionicons'
 import { Spacer } from './Spacer';
+import { Badge } from './Badge';
 
 interface Props {
   menuItem: menuItem
 }
-
 
 export const FlatListMenuItem = ({menuItem}:Props) => {
 
@@ -32,6 +32,13 @@ export const FlatListMenuItem = ({menuItem}:Props) => {
           <Text style={{...styles.textList, color: colors.text}}>
             {menuItem.name}
           </Text>
+          {
+            menuItem.isIssued ? 
+              <Badge
+                title='+1 issue' 
+              />
+            : ''
+          }
           <Spacer />
           <Icon style={{ backgroundColor: 'transparent' }}
             size={30}
@@ -52,7 +59,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   containerList: {
-    //backgroundColor: 'pink',
+    // backgroundColor: 'pink',
     alignItems: 'center',
     flexDirection: 'row'
   },

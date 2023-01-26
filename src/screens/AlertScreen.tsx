@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StyleSheet, Text, View , Alert} from 'react-native'
-import { Button } from 'react-native-elements'
+import { Button } from '@rneui/themed'
 import prompt from 'react-native-prompt-android'
 import { ThemeContext } from '../context/theme/ThemeContext'
 

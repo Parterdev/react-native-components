@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Divider } from 'react-native-elements';
+import { Divider } from '@rneui/themed';
 import { ThemeContext } from '../context/theme/ThemeContext';
 
 export const ItemDivider = () => {

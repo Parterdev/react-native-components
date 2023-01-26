@@ -1,24 +1,33 @@
-# ⚛️React Native Components
+# ⚛️ React Native Components (Updated)
 
 This project was created with [React Native CLI](https://reactnative.dev/) and [TypeScript](https://www.typescriptlang.org/) template.
 
-![ComponentsApp](https://github.com/Parterdev/react-native-components/blob/master/reactNativeComponents.gif)
+<img width="5000px" height="300px" 
+  src="https://i.ibb.co/2NS3pFw/Post-1.png" />
 
 ## 1. Description
-This project is a new practical item of my mobile app series that made with native RN components and:
- - react native v0.65.1
+This project it's a new practical React Native App (CLI) with plenty components and functionality:
+ - react native v0.70.5
  - [stack-navigator](https://reactnavigation.org/docs/stack-navigator/) - (to make transitions between screens)
- - [react-native-snap-carousel](https://github.com/meliorence/react-native-snap-carousel) - (to make scrollable screens and components)
+ - [react-native-image-colors](https://github.com/osamaqarem/react-native-image-colors) - (to get primary colors from an image)
  - [react-native-elements](https://reactnativeelements.com/) - (UI Toolkit for RN apps)
  - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) - (UI buttons and logos)
  - [react-native-prompt-android](https://github.com/shimohq/react-native-prompt-android#readme) - (To show prompt in Android and iOS platform)
- - Of course, I used things like custom hooks, components, navigator and context API to manage theme app. 
+ - [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native) - (Library for parsing animations as JSON with real rendering)
+ - [react-native-community/slider](https://github.com/callstack/react-native-slider) - (Component used to select a single value from a range of values)
+ - More things: Custom hooks, components, helpers, interfaces, navigator, etc, etc. 
 
 
-## 2. Available Scripts
+## 2. Theme App
+<p>For this app, you'll find context use to set light and black theme generally. I recommend read the next article to have more idea about it:</p>
+
+- [react-native-state-management-with-context-api](https://blog.devgenius.io/react-native-state-management-with-context-api-61f63f5b099) - (React Native state management with Context API)
+
+
+## 3. Available Scripts
 <ul>
   <li>
-    <span style="background-color: #6495ed;color:   #ffff">The project has been only tested on Android device
+    <span style="background-color: #6495ed;color: #ffff">The project has been tested on Android device
     </span>
   </li>
 </ul>
@@ -37,16 +46,17 @@ To install dependencies
   </ul>
 </ul>
 
-To start the development server and run app on simulator or device
+To start the development server (Metro Bundler)
+<ul>
+  <li>$ npx react-native start</li>
+</ul>
 
-## 3. Notice
+## 4. Notice
 <ul>
   <li>
-    <span style="background-color: #7fffd4;">Feel free to   fork this repo and add your own twist!
+    <span style="background-color: #7fffd4;">Developed by Parterdev
     </span>
   </li>
 </ul>
 
 <hr>
-
-### 👋 You can visit my webpage here: [Paul's website](https://paul-teran.com/)

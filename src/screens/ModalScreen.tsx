@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react'
-import { Modal, StyleSheet, Text, View } from 'react-native'
+import React, { useContext, useState, useEffect } from 'react'
+import { Alert, Modal, StyleSheet, Text, View } from 'react-native'
 import Icon  from 'react-native-vector-icons/Ionicons'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { ThemeContext } from '../context/theme/ThemeContext';
@@ -10,20 +10,25 @@ export const ModalScreen = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const {theme: {colors}} = useContext(ThemeContext);
 
-
   return (
     <View style={{...styles.container, backgroundColor: colors.background}}>
       <Modal
         animationType='fade'
         visible={modalVisible}
         transparent={true}
+        onRequestClose={() => {
+          Alert.alert("Modal has been closed...");
+          setModalVisible(!modalVisible)
+        }}
       >
       <View style={styles.modalContainer}>
         <View style={{...styles.modalBody, backgroundColor: colors.background}}>
           <View style={styles.modalHeader}>
             <TouchableOpacity>
               <Icon style={{marginTop: 5}}
-                onPress={() => setModalVisible(!modalVisible)}
+                onPress={() => {
+                  setModalVisible(!modalVisible)
+                }}
                 size={30}
                 name='close-circle-outline'
                 color={colors.primary}
@@ -38,7 +43,7 @@ export const ModalScreen = () => {
       <ButtonIcon
           text='Press me' 
           iconName='radio-button-on-outline'
-          action={() => setModalVisible(!modalVisible)}
+          action={() => setModalVisible(true)}
       />
       
     </View>

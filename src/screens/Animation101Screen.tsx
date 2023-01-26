@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StyleSheet, Text, View, Animated } from 'react-native';
-import { Button } from 'react-native-elements';
+import { Button } from '@rneui/themed';
 import { ButtonIcon } from '../components/ButtonIcon';
 import { ThemeContext } from '../context/theme/ThemeContext';
 import { useAnimated } from '../hooks/useAnimated';
