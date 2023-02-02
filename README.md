@@ -2,7 +2,7 @@
 
 This project was created with [React Native CLI](https://reactnative.dev/) and [TypeScript](https://www.typescriptlang.org/) template.
 
-<img style="width:400px; height:400;" 
+<img style="width: 200px; height: 200px; background-size: cover; background-position: center;" 
   src="https://i.ibb.co/2NS3pFw/Post-1.png" />
 
 ## 1. Description
